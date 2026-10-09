@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Surf Dracula ($SURFDRAC) | The coin that skips the backstory</title>
+  <meta name="description" content="Season 1: Dracula's backstory. Finale: 5 minutes of surfing. $SURFDRAC skips straight to the surfing. Meme coin, no utility, not financial advice.">
+  <meta name="theme-color" content="#07060d">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Surf Dracula ($SURFDRAC)">
+  <meta property="og:description" content="The coin that skips the backstory. Dracula surfs every episode. Meme coin, no utility, not financial advice.">
+  <meta property="og:image" content="https://REPLACE_WITH_DOMAIN/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Surf Dracula ($SURFDRAC)">
+  <meta name="twitter:description" content="The coin that skips the backstory. 🧛🏄">
+  <meta name="twitter:image" content="https://REPLACE_WITH_DOMAIN/img/og.png">
+
+  <link rel="preload" href="fonts/Fraunces-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="img/logo-512.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#token">Skip the backstory</a>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#top" class="brand" aria-label="Surf Dracula home">
+        <img src="img/icon-192.png" alt="" width="36" height="36">
+        <span class="brand__name">Surf <em>Dracula</em></span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#episodes">Episodes</a>
+        <a href="#pilot">The pilot</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#token">$SURFDRAC</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--ghost btn--sm hide-sm" href="REPLACE_WITH_X" target="_blank" rel="noopener" aria-label="Surf Dracula on X">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.3L6.4 22H3.3l7.3-8.3L1 2h6.3l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.3 3.9H4.5L17.8 20Z"/></svg>
+        </a>
+        <a class="btn btn--blood btn--sm" href="#token">Get $SURFDRAC</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__sky" aria-hidden="true">
+        <div class="bat bat--1"><svg viewBox="0 0 64 24"><path d="M32 10c-2-4-5-4-6-1-3-5-11-7-18-4 4 1 6 4 6 7 3-2 7-1 9 2 1-3 4-4 5-2 1-2 4-1 4-2Zm0 0c2-4 5-4 6-1 3-5 11-7 18-4-4 1-6 4-6 7-3-2-7-1-9 2-1-3-4-4-5-2-1-2-4-1-4-2Z"/></svg></div>
+        <div class="bat bat--2"><svg viewBox="0 0 64 24"><path d="M32 10c-2-4-5-4-6-1-3-5-11-7-18-4 4 1 6 4 6 7 3-2 7-1 9 2 1-3 4-4 5-2 1-2 4-1 4-2Zm0 0c2-4 5-4 6-1 3-5 11-7 18-4-4 1-6 4-6 7-3-2-7-1-9 2-1-3-4-4-5-2-1-2-4-1-4-2Z"/></svg></div>
+        <div class="bat bat--3"><svg viewBox="0 0 64 24"><path d="M32 10c-2-4-5-4-6-1-3-5-11-7-18-4 4 1 6 4 6 7 3-2 7-1 9 2 1-3 4-4 5-2 1-2 4-1 4-2Zm0 0c2-4 5-4 6-1 3-5 11-7 18-4-4 1-6 4-6 7-3-2-7-1-9 2-1-3-4-4-5-2-1-2-4-1-4-2Z"/></svg></div>
+      </div>
+
+      <div class="hero__inner container">
+        <div class="hero__copy">
+          <p class="previously reveal">
+            <span class="rec" aria-hidden="true"></span>
+            <span>Previously on <em>Surf Dracula</em>&hellip;</span>
+            <a href="#episodes" class="skip-intro">Skip intro <span aria-hidden="true">&rsaquo;&rsaquo;</span></a>
+          </p>
+          <h1 id="hero-title" class="hero__title reveal">
+            <span class="t-surf">Surf</span>
+            <span class="t-drac">Dracula</span>
+          </h1>
+          <p class="hero__lede reveal">The coin that <strong>skips the backstory.</strong><br>No lore dumps. No nine-hour season one. Dracula surfs, every episode.</p>
+          <div class="hero__actions reveal">
+            <button class="ca-pill" type="button" data-copy="REPLACE_WITH_CA" aria-label="Copy contract address">
+              <span class="ca-pill__label">CA</span>
+              <span class="ca-pill__value">REPLACE_WITH_CA</span>
+              <svg class="ca-pill__icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M16 1H6a2 2 0 0 0-2 2v12h2V3h10V1Zm3 4H10a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16h-9V7h9v14Z"/></svg>
+            </button>
+            <div class="hero__socials">
+              <a class="btn btn--moon" href="REPLACE_WITH_X" target="_blank" rel="noopener">Follow on X</a>
+              <a class="btn btn--ghost" href="REPLACE_WITH_TG" target="_blank" rel="noopener">Telegram</a>
+            </div>
+          </div>
+          <p class="hero__fine reveal">Meme coin &middot; no utility &middot; not financial advice</p>
+        </div>
+
+        <div class="hero__art" id="heroArt">
+          <div class="moon" aria-hidden="true"><div class="moon__disc"></div></div>
+          <figure class="tv reveal" id="tv">
+            <div class="tv__bar">
+              <span class="tv__live"><i></i>On air</span>
+              <span class="tv__ep">S01 &middot; E01 &middot; 00:00:01</span>
+            </div>
+            <img src="img/logo-512.webp" srcset="img/logo-512.webp 512w, img/logo-1024.webp 1024w" sizes="(max-width: 900px) 78vw, 460px" width="512" height="512" alt="Surf Dracula logo: a cartoon vampire in sunglasses and a red cape riding a yellow surfboard under a full moon" fetchpriority="high">
+            <figcaption class="tv__cap">He&rsquo;s already on the wave.</figcaption>
+            <div class="tv__sheen" aria-hidden="true"></div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="sea" aria-hidden="true">
+        <div class="sea__reflect"></div>
+        <svg class="wave wave--back" viewBox="0 0 2880 220" preserveAspectRatio="none"><path d="M0 120 Q180 70 360 120 T720 120 T1080 120 T1440 120 T1800 120 T2160 120 T2520 120 T2880 120 V220 H0Z"/></svg>
+        <svg class="wave wave--mid" viewBox="0 0 2880 220" preserveAspectRatio="none"><path d="M0 140 Q240 95 480 140 T960 140 T1440 140 T1920 140 T2400 140 T2880 140 V220 H0Z"/></svg>
+        <svg class="wave wave--front" viewBox="0 0 2880 220" preserveAspectRatio="none"><path d="M0 165 Q360 125 720 165 T1440 165 T2160 165 T2880 165 V220 H0Z"/></svg>
+      </div>
+      <a href="#episodes" class="scroll-cue" aria-label="Scroll to episodes"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>$SURFDRAC</span><b>&#10022;</b><span>No backstory</span><b>&#10022;</b><span>No roadmap</span><b>&#10022;</b><span>No flashbacks</span><b>&#10022;</b><span>Just surfing</span><b>&#10022;</b><span>Moonlight session is live</span><b>&#10022;</b>
+        <span>$SURFDRAC</span><b>&#10022;</b><span>No backstory</span><b>&#10022;</b><span>No roadmap</span><b>&#10022;</b><span>No flashbacks</span><b>&#10022;</b><span>Just surfing</span><b>&#10022;</b><span>Moonlight session is live</span><b>&#10022;</b>
+      </div>
+    </div>
+
+    <!-- ============ EPISODES ============ -->
+    <section class="section episodes" id="episodes" aria-labelledby="ep-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="kicker">Episode guide</p>
+          <h2 id="ep-title">Season&nbsp;1 <span class="vs">vs.</span> <em>the finale</em></h2>
+          <p class="section__sub">Old TV: Dracula surfs every episode. Streaming TV: nine episodes of backstory, five minutes of surfing. Pick a side.</p>
+        </header>
+
+        <div class="versus">
+          <article class="show show--slow reveal">
+            <header class="show__head">
+              <span class="badge badge--dim">Streaming era</span>
+              <h3>Surf Dracula: <em>Origins</em></h3>
+              <p class="show__meta">9 episodes &middot; 9h 03m &middot; Surfing: 5m</p>
+            </header>
+            <ol class="eplist">
+              <li><span class="n">01</span><span class="t">Born in Transylvania</span><span class="d">58m</span></li>
+              <li><span class="n">02</span><span class="t">400 Years of Brooding</span><span class="d">61m</span></li>
+              <li><span class="n">03</span><span class="t">The Castle Has Feelings</span><span class="d">57m</span></li>
+              <li><span class="n">04</span><span class="t">A Bat&rsquo;s Origin Story</span><span class="d">54m</span></li>
+              <li><span class="n">05</span><span class="t">Flashback Within a Flashback</span><span class="d">66m</span></li>
+              <li><span class="n">06</span><span class="t">He Sees the Ocean (From Afar)</span><span class="d">59m</span></li>
+              <li><span class="n">07</span><span class="t">Sunlight, Explained</span><span class="d">62m</span></li>
+              <li><span class="n">08</span><span class="t">Finds a Surfboard</span><span class="d">55m</span></li>
+              <li class="is-finale"><span class="n">09</span><span class="t">Finale <small>surfs at 1:06:00. Credits at 1:11:00.</small></span><span class="d">71m</span></li>
+            </ol>
+          </article>
+
+          <div class="versus__vs" aria-hidden="true"><span>VS</span></div>
+
+          <article class="show show--fast reveal">
+            <header class="show__head">
+              <span class="badge badge--sea">$SURFDRAC</span>
+              <h3>Surf Dracula: <em>Uncut</em></h3>
+              <p class="show__meta">Every episode &middot; Surfing: all of it</p>
+            </header>
+            <ol class="eplist">
+              <li><span class="n">01</span><span class="t">Surfs.</span><span class="d wave-ico">&#8776;</span></li>
+              <li><span class="n">02</span><span class="t">Surfs.</span><span class="d wave-ico">&#8776;</span></li>
+              <li><span class="n">03</span><span class="t">Surfs, at night, obviously.</span><span class="d wave-ico">&#8776;</span></li>
+              <li><span class="n">04</span><span class="t">Surfs. Zero flashbacks.</span><span class="d wave-ico">&#8776;</span></li>
+              <li><span class="n">05</span><span class="t">Bigger wave. Still surfing.</span><span class="d wave-ico">&#8776;</span></li>
+              <li><span class="n">06</span><span class="t">Surfs. Nobody explains the cape.</span><span class="d wave-ico">&#8776;</span></li>
+              <li><span class="n">07</span><span class="t">Surfs.</span><span class="d wave-ico">&#8776;</span></li>
+              <li><span class="n">08</span><span class="t">Surfs. You get the idea.</span><span class="d wave-ico">&#8776;</span></li>
+              <li class="is-finale"><span class="n">09</span><span class="t">Finale <small>also surfing.</small></span><span class="d wave-ico">&#8776;</span></li>
+            </ol>
+          </article>
+        </div>
+
+        <div class="runtime reveal" id="runtime">
+          <div class="runtime__row">
+            <div class="runtime__label"><span>Origins</span><small>runtime breakdown</small></div>
+            <div class="bar" role="img" aria-label="Origins: 99 percent backstory, 1 percent surfing">
+              <div class="bar__fill bar__fill--lore" style="--w:99.08%"><span>Backstory</span></div>
+              <div class="bar__fill bar__fill--surf" style="--w:0.92%"></div>
+            </div>
+            <div class="runtime__pct">0.9% surf</div>
+          </div>
+          <div class="runtime__row">
+            <div class="runtime__label"><span>$SURFDRAC</span><small>runtime breakdown</small></div>
+            <div class="bar" role="img" aria-label="SURFDRAC: 100 percent surfing">
+              <div class="bar__fill bar__fill--surf bar__fill--full" style="--w:100%"><span>Surfing</span></div>
+            </div>
+            <div class="runtime__pct runtime__pct--hi">100% surf</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PILOT ============ -->
+    <section class="section pilot" id="pilot" aria-labelledby="pilot-title">
+      <div class="container pilot__grid">
+        <div class="pilot__copy reveal">
+          <p class="kicker">The pilot</p>
+          <h2 id="pilot-title">Just let him <em>surf.</em></h2>
+          <p>In the old days, a show called <em>Surf Dracula</em> was exactly what it says: Dracula, surfing, every single episode. Then streaming happened, and season one became nine hours of tragic backstory before he touches a board in the last five minutes of the finale.</p>
+          <p><strong>$SURFDRAC is a Solana meme coin that skips the backstory.</strong> No utility, no roadmap, no team promises, no lore dump. Just a vampire in sunglasses catching waves under a full moon, for everyone who has ever yelled &ldquo;just let him surf&rdquo; at their TV.</p>
+          <p class="pilot__note">Vampires can&rsquo;t go out in the sun, so Dracula only surfs at night. The moonlight session is permanently live. &#127765;</p>
+        </div>
+        <figure class="still reveal">
+          <img src="img/banner.webp" width="1500" height="500" loading="lazy" decoding="async" alt="Banner art: Surf Dracula riding a wave under a full moon. Season 1: 11 hours of backstory. Finale: 5 minutes of surfing.">
+          <figcaption><span>STILL</span> Every episode looks like this.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ ROADMAP ============ -->
+    <section class="section roadmap" id="roadmap" aria-labelledby="rm-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="kicker">The roadmap <span class="lol">(lol)</span></p>
+          <h2 id="rm-title">Three phases. <em>One wave.</em></h2>
+        </header>
+        <div class="phases">
+          <article class="phase reveal"><span class="phase__n">Phase 1</span><h3>Surf.</h3><p>Paddle out. Catch the wave. Skip the opening credits.</p></article>
+          <article class="phase reveal"><span class="phase__n">Phase 2</span><h3>Surf.</h3><p>Same as phase one. That&rsquo;s the whole point.</p></article>
+          <article class="phase reveal"><span class="phase__n">Phase 3</span><h3>Still surfing.</h3><p>Zero flashbacks. Nobody finds a mysterious diary.</p></article>
+        </div>
+        <p class="roadmap__foot reveal">It&rsquo;s a meme coin. There is no roadmap. There never was.</p>
+      </div>
+    </section>
+
+    <!-- ============ TOKEN ============ -->
+    <section class="section token" id="token" aria-labelledby="tk-title">
+      <div class="container">
+        <div class="ticket reveal">
+          <div class="ticket__glow" aria-hidden="true"></div>
+          <div class="ticket__main">
+            <p class="kicker">Now showing</p>
+            <h2 id="tk-title"><span class="dollar">$</span>SURFDRAC</h2>
+            <dl class="specs">
+              <div><dt>Name</dt><dd>Surf Dracula</dd></div>
+              <div><dt>Ticker</dt><dd>$SURFDRAC</dd></div>
+              <div><dt>Chain</dt><dd>Solana</dd></div>
+              <div><dt>Launched on</dt><dd>pump.fun</dd></div>
+            </dl>
+
+            <div class="ca" role="group" aria-label="Contract address">
+              <div class="ca__head"><span>Contract address</span><span class="ca__flag">Placeholder</span></div>
+              <div class="ca__row">
+                <code class="ca__code" id="caCode">REPLACE_WITH_CA</code>
+                <button class="btn btn--moon btn--sm ca__btn" type="button" data-copy="REPLACE_WITH_CA">Copy</button>
+              </div>
+            </div>
+
+            <div class="token__links">
+              <a class="btn btn--blood" href="https://pump.fun/coin/REPLACE_WITH_CA" target="_blank" rel="noopener">View on pump.fun</a>
+              <a class="btn btn--ghost" href="REPLACE_WITH_X" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.3L6.4 22H3.3l7.3-8.3L1 2h6.3l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.3 3.9H4.5L17.8 20Z"/></svg>X</a>
+              <a class="btn btn--ghost" href="REPLACE_WITH_TG" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 18.7 19.5c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6.1 13.3 1.2 11.8c-1.1-.3-1.1-1.1.2-1.6L20.5 2.8c.9-.3 1.7.2 1.4 1.5Z"/></svg>Telegram</a>
+            </div>
+            <p class="token__safety">Official CA is pinned on X and Telegram only. Admins will <strong>never</strong> DM you first.</p>
+          </div>
+          <div class="ticket__stub" aria-hidden="true">
+            <img src="img/logo-512.webp" width="512" height="512" loading="lazy" decoding="async" alt="">
+            <span class="stub__txt">ADMIT ONE &middot; MOONLIGHT SESSION</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="img/icon-192.png" alt="" width="44" height="44" loading="lazy">
+        <div>
+          <p class="footer__name">Surf <em>Dracula</em></p>
+          <p class="footer__tag">The coin that skips the backstory.</p>
+        </div>
+      </div>
+      <nav class="footer__links" aria-label="Social">
+        <a href="REPLACE_WITH_X" target="_blank" rel="noopener">X</a>
+        <a href="REPLACE_WITH_TG" target="_blank" rel="noopener">Telegram</a>
+        <a href="#top">Back to the wave &uarr;</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="disclaimer"><strong>Meme coin, no utility, not financial advice.</strong> $SURFDRAC is a meme coin made for entertainment. It has no intrinsic value, no utility, no roadmap, and no team promises, and there is no expectation of financial return. Meme coins are extremely risky and can go to zero. Do your own research and never spend more than you can afford to lose. Surf Dracula is an original cartoon and is not affiliated with any show, studio, or person.</p>
+      <p class="copyright">&copy; 2026 Surf Dracula. No backstory was harmed in the making of this website.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="main.js" defer></script>
+</body>
+</html>
