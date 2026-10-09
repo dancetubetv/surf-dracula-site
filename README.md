@@ -18,7 +18,7 @@ Search the project for `REPLACE_WITH_` (`grep -rn REPLACE_WITH_ .`):
 |---|---|---|
 | `REPLACE_WITH_CA` | `index.html` (hero pill, CA box, pump.fun link, `data-copy` attributes) | The token's contract address, after launch |
 | `REPLACE_WITH_X` | `index.html` | Your X profile URL, e.g. `https://x.com/SurfDraculaCoin` |
-| `REPLACE_WITH_TG` | `index.html` | Your Telegram URL, e.g. `https://t.me/...` |
+| `https://t.me/SurfDraculaCoin` | `index.html` | Your Telegram URL, e.g. `https://t.me/...` |
 | `REPLACE_WITH_DOMAIN` | `index.html` (`og:image` / `twitter:image`) | Your Vercel domain, e.g. `surfdrac.vercel.app`, so link previews work |
 
 ## Deploy on Vercel (free Hobby plan)
